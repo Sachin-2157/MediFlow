@@ -1,16 +1,25 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
+import { AppRoutes } from './routes'
 import viteLogo from '/vite.svg'
 import './App.css'
+// import Button from ""
+import { Button } from '@/components/ui/button.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-     <h1 class="text-4xl font-bold text-blue-600 text-center mt-6">
-  Hello
-</h1>
+     {/* <BrowserRouter> */}
+        <>
+          <h1 className="text-3xl font-bold underline">
+            <Button>Development Mode!</Button>
+            
+          </h1>
+        </>
+        <AppRoutes />
+      {/* </BrowserRouter> */}
     </>
   )
 }
